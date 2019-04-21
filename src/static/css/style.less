@@ -1,0 +1,61 @@
+@import "./common";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+li {
+  list-style: none;
+}
+a:hover {
+  color: @redLightColor;
+}
+.text-main {
+  color: @redColor;
+}
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.p-center {
+  text-align: center;
+}
+//字体
+.f-12 {
+  font-size: 12px;
+}
+
+//margin
+.mt-10 {
+  margin-top: 10px;
+}
+
+//浮动
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+
