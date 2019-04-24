@@ -9,6 +9,11 @@ import OrderCon from 'component/Order/Order'  //下单
 import Story from 'component/Story'   //品牌故事
 import Eden from 'component/Eden'    //启蒙乐园
 import Contact from 'component/Contact'  //联系我们
+import LoginBox from 'component/Login'  // 登录盒子
+import Login from 'component/Login/Login'  // 登录
+import Register from 'component/Login/Register'  // 登录
+import Usercenter from 'component/UserCenter'   //个人中心
+import UserCard from 'component/Usercenter/UserCard'   //个人中心
 
 Vue.use(Router)
 
@@ -23,6 +28,16 @@ export default new Router({
     },{
       path: '/detail/:id',
       component: Detail
+    },{
+      path: '/login',
+      component: LoginBox,
+      children:[{
+        path: '',
+        component: Login,
+      },{
+        path: '/register',
+        component: Register
+      }]
     },{
       path: '/tale',
       component: Story
@@ -41,6 +56,13 @@ export default new Router({
       },{
         path: 'info',
         component: OrderCon
+      }]
+    },{
+      path: '/usercenter',
+      component: Usercenter,
+      children: [{
+        path: '',
+        component: UserCard
       }]
     }
   ]

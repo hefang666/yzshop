@@ -1,9 +1,16 @@
 <template>
-
+  <div class="container clearfix">
+    <Personnav></Personnav>
+    <router-view></router-view>
+  </div>
 </template>
-<script>
-    export default {}
-</script>
-<style>
 
-</style>
+<script>
+  import Personnav from './Nav'
+
+  export default {
+    components: {
+      Personnav
+    }
+  }
+</script>
