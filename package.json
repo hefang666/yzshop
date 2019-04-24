@@ -12,6 +12,8 @@
   "dependencies": {
     "element-china-area-data": "^4.1.2",
     "element-ui": "^2.7.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "vue": "^2.5.2",
     "vue-magnify": "^1.0.1",
     "vue-router": "^3.0.1"
