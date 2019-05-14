@@ -7,7 +7,9 @@ import elementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'css/style.less'
 import 'common/styl/index.styl'
+//导入样式
 import 'common/styl/variable.styl'
+
 //导入放大镜
 import vueMagnify from 'vue-magnify'
 
