@@ -6,6 +6,7 @@ import router from './router'
 import elementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'css/style.less'
+// 首页样式
 import 'common/styl/index.styl'
 //导入样式
 import 'common/styl/variable.styl'
